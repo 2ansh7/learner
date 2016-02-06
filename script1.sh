@@ -1,5 +1,6 @@
 #!/bin/sh
 # this script use for system health checkup
+# Created by anmol sharma
 echo `date` >> `pwd`/my.log
 free -m | awk 'NR==2{printf "Memory Usage: %s/%sMB (%.2f%%)\n", $3,$2,$3*100/$2 }' | tee -a `pwd`/my.log
 df -h | awk '$NF=="/"{printf "Disk Usage: %d/%dGB (%s)\n", $3,$2,$5}' | tee -a `pwd`/my.log
