@@ -1,4 +1,5 @@
 #!/bin/sh
+# this is a master file
 # this script use for system health checkup
 # Created by anmol sharma (1127ansasharma@gmail.com)
 echo `date` >> `pwd`/my.log
